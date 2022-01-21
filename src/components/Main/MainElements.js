@@ -14,11 +14,6 @@ export const App = styled.div`
   width: 100%;
   overflow: hidden;
   padding-bottom: 100px;
-  /* margin-top: calc(5em + 0.1em); */
-
-  /* @media (min-width: 769px) {
-    width: 70%;
-  } */
 `;
 
 export const AppContainer = styled.main`
@@ -40,13 +35,11 @@ export const AppContainer = styled.main`
 export const AnimeTitle = styled.h2`
   margin-top: 0;
   color: #1d43a7;
-  /* text-align: left; */
 `;
 
 export const AnimeImage = styled.img`
   padding: 0.2%;
   border: 1px solid #bebebe;
-  /* margin-bottom: 2%; */
   max-width: 100%;
   height: auto;
 `;
@@ -65,7 +58,6 @@ export const RightSide = styled.div`
 `;
 
 export const LeftSubheadings = styled.p`
-  /* margin-top: 0; */
   padding-bottom: 1%;
   font-weight: bold;
   border-bottom: 1px solid #bebebe;
@@ -73,7 +65,6 @@ export const LeftSubheadings = styled.p`
 `;
 
 export const RightSubheadings = styled.p`
-  /* margin-top: 0; */
   padding-bottom: 1%;
   font-weight: bold;
   border-bottom: 1px solid #bebebe;
@@ -82,27 +73,20 @@ export const RightSubheadings = styled.p`
 export const AnimeDetails = styled.p`
   font-weight: bold;
   color: #7f7f7f;
-  /* text-align: left; */
 `;
 
 export const AnimeSynopsis = styled.p`
   font-size: 1.1rem;
   line-height: 1.4;
-  /* margin-bottom: 4%; */
 `;
 
 export const Trailer = styled.iframe`
   width: 100%;
   height: 400px;
-
-  @media (min-width: 769px) {
-    /* width: 80%; */
-  }
 `;
 
 export const TrailerNote = styled.p`
   font-size: 0.75rem;
   font-style: italic;
   margin: 0;
-  /* padding: 0; */
 `;

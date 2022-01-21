@@ -14,16 +14,6 @@ import {
 
 function Sidebar({ dispatch }) {
   const [topAnime, setTopAnime] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get('https://api.jikan.moe/v3/top/anime/1/airing')
-  //     .then((res) => {
-  //       setTopAnime(res.data.top.slice(0, 10));
-  //     })
-  //     .catch((err) => {
-  //       console.error(err);
-  //     });
-  // }, []);
 
   useEffect(() => {
     async function fetchData() {
@@ -50,7 +40,8 @@ function Sidebar({ dispatch }) {
             <AnimeLinks
               key={anime.mal_id}
               id={anime.mal_id}
-              onClick={handleClick}>
+              onClick={handleClick}
+            >
               {anime.title}
             </AnimeLinks>
           ))}

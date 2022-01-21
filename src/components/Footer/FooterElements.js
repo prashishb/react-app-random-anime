@@ -10,7 +10,6 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const FooterContainer = styled.div`
-  /* margin-top: 2%; */
   background: #1d43a7;
   padding: 20px 0;
   text-align: center;

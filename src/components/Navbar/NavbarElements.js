@@ -7,7 +7,6 @@ export const Nav = styled.div`
   justify-content: center;
   align-items: center;
   background: #fff;
-  /* position: fixed; */
   position: sticky;
   width: 100%;
   height: 5em;
@@ -72,7 +71,6 @@ export const NavItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* text-align: center; */
   margin-right: -22px;
   padding: 0 1rem;
 `;
