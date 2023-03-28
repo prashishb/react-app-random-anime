@@ -17,10 +17,14 @@ function Sidebar({ dispatch }) {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await axios.get(
-        'https://api.jikan.moe/v3/top/anime/1/airing'
-      );
-      setTopAnime(res.data.top.slice(0, 10));
+      const res = await axios.get('https://api.jikan.moe/v4/top/anime?airing');
+      const topAnime = res.data.data.map((anime) => {
+        return {
+          mal_id: anime.mal_id,
+          title: anime.titles[0].title,
+        };
+      });
+      setTopAnime(topAnime.slice(0, 10));
     }
     fetchData();
   }, []);
